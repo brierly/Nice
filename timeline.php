@@ -25,6 +25,7 @@ $check = $conn->query("SELECT * FROM posts ORDER BY id DESC");
 	while ($row = mysqli_fetch_assoc($check)) {
 	$postid = $row['id'];
 	$postbody = $row['body'];
+	$postbody = str_replace("\n", "<br/>", $postbody);
 	$postedby = $row['user'];
 	$favs = $row['favs'];
 	$favarray = explode(";", $favs);

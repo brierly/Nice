@@ -113,3 +113,6 @@ a:hover {
 	100%{bottom:0px;}
 }
 
+.content {
+	word-break: break-all;
+}
