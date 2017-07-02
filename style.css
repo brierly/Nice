@@ -92,5 +92,7 @@ a {
 	top: 3px;
 }
 .content {
-	word-break: break-all;
+	-ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
 }
